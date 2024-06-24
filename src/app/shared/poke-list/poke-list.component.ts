@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PokeApiService } from '../../service/poke-api.service';
+import { ETheme } from '../enums/Etheme.enum';
 
 @Component({
   selector: 'poke-list',
@@ -38,5 +39,20 @@ export class PokeListComponent {
     this.getAllPokemons = filter;
 
   }
+
+  public icon: string = ETheme.ICON_MOON;
+  public textTheme: string = ETheme.TEXT_MOON;
+
+  public toggle() {
+      const theme = document.body.classList.toggle('dark-theme');
+
+      if (theme) {
+        this.textTheme = ETheme.TEXT_SUN;
+        return (this.icon = ETheme.ICON_SUN);
+      }
+
+      this.textTheme = ETheme.TEXT_MOON;
+      return (this.icon = ETheme.ICON_MOON);
+    }
 
 }

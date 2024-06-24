@@ -9,6 +9,10 @@ html {
 	background: var(--primary-color);
 }
 
+html .dark-theme{
+	background: var(--primary-color);
+}
+
 main {
 	max-width: rem-calc(600);
 	box-sizing: border-box;

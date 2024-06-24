@@ -54,7 +54,7 @@
 				flex-direction: column;
 				justify-content: space-between;
 
-				background: var(--branco);
+				background: var(--box);
 
 				min-height: 44.9vh;
 				margin-top: rem-calc(10);
@@ -83,6 +83,7 @@
 					}
 				}
 			}
+			
 		}
 
 		@media (max-width: 420px) {

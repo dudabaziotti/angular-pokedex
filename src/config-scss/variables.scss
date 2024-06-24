@@ -1,6 +1,18 @@
 :root{
     --branco: #fff;
     --cinza: #efefef;
+    --box: #fff;
+    --infos: #efefef;
+    
+    --primary-color:#6e7390;
+    --secundary-color:#ff5473;
+}
+
+:root .dark-theme{
+    --branco: #fff;
+    --cinza: #efefef;
+    --box: #a6a2a2;
+    --infos: #8a8a8a;
     
     --primary-color:#262835;
     --secundary-color:#ff5473;
